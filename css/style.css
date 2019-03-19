@@ -1,0 +1,229 @@
+            /* ----- GLOBAL STYLING ----- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+            /* --- Globale Variabler --- */
+
+:root {
+    --headblue: #11497B;
+    --bcggrey: #F9F9F9;
+    --bcgicon: #F2F2F2;
+    --txt: #0A2C4A;
+    --btn1: #4AA22C;
+    --btn2: #F2F2F2;
+    --prcgrey: #C4C4C4;
+    --prcblue: #0068B4;
+    --icon: #34648f;
+}
+
+body {
+    background-color: var(--bcggrey);
+}
+
+            /* --- HEADER --- */
+
+header {
+    background-color: var(--headblue);
+    height: 80px;
+    position: relative;
+}
+
+header img {
+    width: 17.5%;
+    height: auto;
+    position: absolute;
+    bottom: 12.5px;
+    left: 56px;
+}
+
+            /* --- ASIDE --- */
+
+aside {
+    position: absolute;
+    left: 56px;
+    width: 20%;
+    top: 147px;
+}
+
+aside h1 {
+    margin-top: 0;
+}
+
+            /* --- SECTION --- */
+
+section {
+    width: 40%;
+    height: 1000px;
+    /* */
+    margin: 71px auto;
+    top: 185px;
+    background-color: #fff;
+}
+
+section h2{
+    color: var(--txt);
+    font-size: 120% ;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* - FORM - */
+
+.tab input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    box-shadow: 1px 1px 3px 3px rgb(0, 0, 0, 0.06);
+}
+
+::placeholder{
+    color: rgb(51, 51, 51, 0.3);
+    font-size: 80%;
+    padding-left: 20px;
+}
+
+.inputp{
+    font-size: 80%;
+    color: #333;
+    padding: 0;
+    margin-bottom: -10px;
+    margin-top: 0px;
+}
+
+form{
+    margin: 0 30px;
+}
+
+/* GRID */
+
+
+/* GRID FORM */
+
+.fname {
+    grid-area: fname;
+}
+
+.lname {
+    grid-area: lname;
+}
+
+.email {
+    grid-area: email;
+}
+
+.pword {
+    grid-area: pword;
+}
+
+.cname {
+    grid-area: cname;
+}
+
+#regForm {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "fname lname" "email email" "pword cname";
+    grid-gap: 0 20px;
+}
+
+/* - JOB ROLE - */
+
+section h3{
+    color: var(--txt);
+    font-size: 90% ;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px 0;
+}
+
+.pickone{
+    text-align: center;
+    font-size: 60%;
+    margin: 2px 0 0;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+/* - ROLES - */
+
+/* CONTAINER */
+
+#jobcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+    justify-content: space-around;
+}
+
+#jobcontainer2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 60px 0;
+    justify-content: space-around;
+}
+
+.roleimg{
+    background-color: var(--bcgicon);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.jobimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+}
+
+.jobtxt{
+    position: absolute;
+    top: 55px;
+    font-size: 70%;
+    color: #333;
+    margin:0 5px;
+    text-align: center;
+}
+
+/* BTN */
+
+.btn{
+    border: none;
+    background-color: var(--bcggrey);
+    font-size: 70%;
+    color: #333;
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.here{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 55px;
+    transform: translate(-50%, -50%);
+    font-size: 60%;
+    color: var(--icon);
+}
+
+span{
+    text-decoration: underline;
+}
